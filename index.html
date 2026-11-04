@@ -47,6 +47,12 @@
           /* Llama a la animación 'zumbido', dura 0.15s, es lineal y se repite infinitamente */
           animation: zumbido 0.15s linear infinite; 
         }
+
+        .boton-enlace:nth-child(1) .imagen-zumbido { animation-delay: 0s; }
+        .boton-enlace:nth-child(2) .imagen-zumbido { animation-delay: 0.1s; }
+        .boton-enlace:nth-child(3) .imagen-zumbido { animation-delay: 0.2s; }
+        .boton-enlace:nth-child(4) .imagen-zumbido { animation-delay: 0.3s; }
+        .boton-enlace:nth-child(5) .imagen-zumbido { animation-delay: 0.4s; }
         
         /* Definición de los movimientos del zumbido */
         @keyframes zumbido {
