@@ -26,6 +26,8 @@
             top:1em;
     
         }
+
+        
         .volante-container {
             width: 100%;
             max-width: 600px; /* Evita que se deforme si se abre en computadoras */
@@ -38,6 +40,23 @@
             height: auto;
             display: block;
         }
+
+        /* Configuración de la animación en la imagen */
+        .imagen-zumbido {
+          display: inline-block;
+          /* Llama a la animación 'zumbido', dura 0.15s, es lineal y se repite infinitamente */
+          animation: zumbido 0.15s linear infinite; 
+        }
+        
+        /* Definición de los movimientos del zumbido */
+        @keyframes zumbido {
+          0% { transform: translate(0, 0) rotate(0deg); }
+          20% { transform: translate(-2px, 1px) rotate(-1deg); }
+          40% { transform: translate(-1px, -1px) rotate(1deg); }
+          60% { transform: translate(2px, 0px) rotate(-0.5deg); }
+          80% { transform: translate(1px, 2px) rotate(1deg); }
+          100% { transform: translate(0, 0) rotate(0deg); }
+        }
     </style>
 </head>
 <body>
@@ -48,23 +67,23 @@
          <!-- Botones para las marcas -->
         
         <div id="botones">
-            <a href="covergirl.html">
+            <a href="covergirl.html" class="imagen-zumbido">
                 <img src="covergirl boton.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
             
-            <a href="maxfactor.html">
+            <a href="maxfactor.html" class="imagen-zumbido">
                 <img src="maxfactor boton.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
 
-            <a href="revlon.html">
+            <a href="revlon.html" class="imagen-zumbido">
                 <img src="revlon boton.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
 
-            <a href="almay.html">
+            <a href="almay.html" class="imagen-zumbido">
                 <img src="almay boton.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
 
-            <a href="sallyhansen.html">
+            <a href="sallyhansen.html" class="imagen-zumbido">
                 <img src="sally boton.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
             
@@ -72,10 +91,10 @@
 
           
         <!-- Segunda imagen agregada -->
-        <img src="CONTACTANOS.jpg" alt="contactanos">
+        <img src="CONTACTANOS.jpg" alt="contactanos" >
 
           <div>
-             <a href="https://wa.link/htdrv2">
+             <a href="https://wa.link/htdrv2" target="_blank">
                 <img src="BOTON NUMERO.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
             </a>
             
