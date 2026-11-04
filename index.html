@@ -48,6 +48,16 @@
           animation: zumbido 0.15s linear infinite; 
         }
 
+        #btn{
+            border: none;
+            cursor: pointer;
+            width: 56vw;
+            display:flex; justify-content:center;
+            
+        }
+
+     
+
         .boton-enlace:nth-child(1) .imagen-zumbido { animation-delay: 0s; }
         .boton-enlace:nth-child(2) .imagen-zumbido { animation-delay: 0.1s; }
         .boton-enlace:nth-child(3) .imagen-zumbido { animation-delay: 0.2s; }
@@ -99,9 +109,9 @@
         <!-- Segunda imagen agregada -->
         <img src="CONTACTANOS.jpg" alt="contactanos" >
 
-          <div>
+          <div style=" display: flex; justify-content: center;">
              <a href="https://wa.link/htdrv2" target="_blank">
-                <img src="BOTON NUMERO.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;">
+                <img src="BOTON NUMERO.png" alt="Texto descriptivo del botón" style="border: none; cursor: pointer;" id="btn">
             </a>
             
         </div>
